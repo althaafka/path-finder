@@ -1,21 +1,82 @@
 .main {
     width: 100%;
     height: 100vh;
-    background-color: cornflowerblue;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.map {
+#map {
     height: 100%;
-    background-color: rgb(206, 212, 228);
+    background-color: rgb(255, 255, 255);
     flex: 1 1;
 }
 
 .menu {
     width: 25%;
-    height: 100%;
-    background-color: rgb(82, 93, 97);
+    height: 100vh;
+    background-color: rgba(135, 139, 153, 0);
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
 }
+
+.menu > * {
+    margin-bottom: 15px;
+}
+
+img.huechange { 
+    filter: hue-rotate(180deg); 
+}
+
+.menu:nth-child(2) button{
+    margin-bottom: 10px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menu > :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu > :last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and ((max-width: 660px) or (max-height: 600px)) {
+    .main {
+        width: 100vw;
+        height: 170vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: center;
+    }
+
+    #map {
+        width: 100vw;
+
+        background-color: rgb(255, 255, 255);
+    }
+
+    .menu{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+  }
