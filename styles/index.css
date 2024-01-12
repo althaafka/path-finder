@@ -1,0 +1,21 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    height: 100%;
+    background-color: rgb(206, 212, 228);
+    flex: 1 1;
+}
+
+.menu {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(82, 93, 97);
+}
